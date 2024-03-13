@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+            <link href="./resources_your-own-cheatsheet/CSS_your-own-cheatsheet/Index_your-own-cheatsheet.css" type="text/css" rel="stylesheet">
+            <title>Build Your Own Cheatsheet Project: HTML Fundamentals</title>
+        </head>
+
+        <body>
+            <header>
+                <div class="banner" id="banner">
+                    <h1>HTML Fundamentals Cheatsheet</h1>
+                </div>
+                <div class="navigation">
+                    <ul>
+                     <a id="html-arrow">HTML</a>
+                     <a href="#structure" class="btn">STRUCTURE</a>
+                     <a href="#anatomy" class="btn">ANATOMY</a>
+                     <a href="#sections" class="btn">SECTIONS</a>
+                     <a href="#fundamentals" class="btn">FUNDAMENTALS</a>
+                    </ul>
+                </div>     
+            </header>
+
+            <main>
+                <div>
+                    <h2 id="html">What is HTML?</HTML></h2>
+                        <p>HTML (<span class="cap">H</span>yper<span class="cap">T</span>ext <span class="cap">M</span>arkup <span class="cap">L</span>anguage) is used to give content to a web page and instructs web browsers on how to structure that content.
+                        </p>
+                    <h2 id="structure">HTML structure</h2>
+                        <p> HTML is organized into a hierarchy, we can compare HTML <em>elements</em> with a family tree structure.<br>
+                        When we nest one HTML tag into another one, the tag that is nested inside is called the child element of the prior tag.<br> 
+                        An HTML document is constructed with a lot of element members, so HTML elements can have parents, grandparents, siblings, children, grandchildren, etc.</p>
+                
+                    <h2 id="anatomy">Anatomy of an HTML element</h2>
+                        <p>An HTML element uses the following syntax: opening tag + content + closing tag.<br>
+                        <br>
+                        <b><span class="code">&lt;p&gt;</span> This is the <span class="code">content</span> of an element between the opening and closing tags <span class="code">&lt;p&gt;</span></b></p>
+                        
+                    <h2>Anatomy of an HTML document</h2>
+                        <p>Individual HTML elements combine to form an entire HTML page.</p>
+                    
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;!DOCTYPE html&gt;</span>
+                                </td>
+                                <td><span class="tag-name">Document Type Declaration</span></td>
+                                <td>The first line of an HTML document</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;html&gt;</span>
+                                </td>
+                                <td><span class="tag-name">HTML Element</span></td>
+                                <td>The root element after the !DOCTYPE declaration. All content for an HTML document should be contained between the opening and closing tags</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;head&gt;</span>
+                                </td>
+                                <td><span class="tag-name">Head Element</span></td>
+                                <td>Contains metadata and includes the title of the HTML document and links to stylesheets.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;title&gt;</span>
+                                </td>
+                                <td><span class="tag-name">Title Element</span></td>
+                                <td>Defines the title of the page, which is the title that appears in the browser tab the page is loaded in.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;body&gt;</span>
+                                </td>
+                                <td><span class="tag-name">Body Element</span></td>
+                                <td>This contains all the content of an HTML document.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                    <h2 id="sections">Basic sections of an HTML document</h2>
+                        <p>Webpages tend to share similar standard components. HTML boasts a number of block level elements used to define areas of a website.<br>
+                        In the HTML code, we can mark up sections of content based on their <em>functionality</em>.<br> 
+                        Structured content makes the reading experience easier and more enjoyable:</p>
+                        <ul>
+                            <li>Users looking at a web page tend to scan quickly to find relevant content.</li>
+                            <li>Without headings, a page will perform poorly in terms of SEO (Search Engine Optimization).</li>
+                            <li>Visually impaired people can use assistive technologies like screen readers to recognize those elements and help with tasks like "find the main navigation", or "find the main content."</li>
+                            <li>To style content so CSS and JavaScript can effectively target it.</li>
+                        </ul>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;header&gt;</span>
+                                </td>
+                                <td><span class="tag-name">header</span></td>
+                                <td>Represents a group of introductory content</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;nav&gt;</span>
+                                </td>
+                                <td><span class="tag-name">navigation bar</span></td>
+                                <td>Contains the main navigation functionality for the page</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;main&gt;</span>
+                                </td>
+                                <td><span class="tag-name">main content</span></td>
+                                <td>Directly inside &lt;body&gt;. It is for content unique to the page</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;aside&gt;</span>
+                                </td>
+                                <td><span class="tag-name">sidebar</span></td>
+                                <td>Often placed inside &lt;main&gt;. It contains content that is not directly related to the main content</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;footer&gt;</span>
+                                </td>
+                                <td><span class="tag-name">footer</span></td>
+                                <td>Represents a group of end content for a page</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <h2 id="fundamentals">HTML fundamental elements</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;!-- and closing --&gt;</span>
+                                </td>
+                                <td><span class="tag-name">comment</span></td>
+                                <td>Content inside of comments will not be rendered by browsers</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;a&gt;</span>
+                                </td>
+                                <td><span class="tag-name">anchor element</span></td>
+                                <td>Creates a link to another page or to a location in the current page</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;b&gt;</span>
+                                </td>
+                                <td><span class="tag-name">bring attention to element</span></td>
+                                <td>Used to draw attention to a section of text, usually rendered in boldface</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;blockquote&gt;</span>
+                                </td>
+                                <td><span class="tag-name">block quotation element</span></td>
+                                <td>A section of a document which contains a longer quotation, usually spanning multiple lines</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;br&gt;</span>
+                                </td>
+                                <td><span class="tag-name">line break element</span></td>
+                                <td>produces a line break in text (carriage-return)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;button&gt;</span>
+                                </td>
+                                <td><span class="tag-name">button element</span></td>
+                                <td>Represents a button meant to be clicked by the user</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;cite&gt;</span>
+                                </td>
+                                <td><span class="tag-name">citation element</span></td>
+                                <td>It is used to mark up the title of a cited creative work</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;code&gt;</span>
+                                </td>
+                                <td><span class="tag-name">inline code element</span></td>
+                                <td>Displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;del&gt;</span>
+                                </td>
+                                <td><span class="tag-name">deleted text element</span></td>
+                                <td>Shows text that is to be removed from a document, usually rendered in strike-through text</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;div&gt;</span>
+                                </td>
+                                <td><span class="tag-name">content division element</span></td>
+                                <td>It is the generic container for flow content</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;em&gt;</span>
+                                </td>
+                                <td><span class="tag-name">emphasis element</span></td>
+                                <td>Represents text which is emphasized. Browsers will show the enclosed text in italics</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;embed&gt;</span>
+                                </td>
+                                <td><span class="tag-name">embed external content element</span></td>
+                                <td>Represents text which is emphasized. Browsers will show the enclosed text in italics</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;figcaption&gt;</span>
+                                </td>
+                                <td><span class="tag-name">figure caption element</span></td>
+                                <td> represents a caption or legend describing the rest of the contents of its parent &lt;figure&gt;element</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;figure&gt;</span>
+                                </td>
+                                <td><span class="tag-name">figure element</span></td>
+                                <td>Represents self-contained content, potentially with an optional caption, which is specified using the &lt;figcaption&gt; element.<br> 
+                                    The figure, its caption, and its contents are referenced as a single unit.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;form&gt;</span>
+                                </td>
+                                <td><span class="tag-name">form element</span></td>
+                                <td>Represents a document section containing interactive controls for submitting information</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;h1&gt;-&lt;h6&gt;</span>
+                                </td>
+                                <td><span class="tag-name">heading elements</span></td>
+                                <td>Represent six levels of section headings,with &lt;h1&gt; being the highest level of heading and &lt;h6&gt; being the lowest</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;img&gt;</span>
+                                </td>
+                                <td><span class="tag-name">image element</span></td>
+                                <td>Displays an image on the web page</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;input&gt;</span>
+                                </td>
+                                <td><span class="tag-name">input (form input) element</span></td>
+                                <td>It is used to create interactive controls for web-based forms in order to accept data from the user</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;li&gt;</span>
+                                </td>
+                                <td><span class="tag-name">list item element</span></td>
+                                <td>Represents a single item in a list of items.<br> 
+                                    It must be contained in a parent element: an ordered list, an unordered list, or a menu tag</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;link&gt;</span>
+                                </td>
+                                <td><span class="tag-name">external resource link element</span></td>
+                                <td>Connects the current page with an external file</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;menu&gt;</span>
+                                </td>
+                                <td><span class="tag-name">menu element</span></td>
+                                <td>Represents an unordered list of items with more semantic meaning than a regular ul element</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;ol&gt;</span>
+                                </td>
+                                <td><span class="tag-name">ordered list element</span></td>
+                                <td>Represents an ordered list of items</td>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;option&gt;</span>
+                                </td>
+                                <td><span class="tag-name">option element</span></td>
+                                <td>Represents one option in a dropdown created by the select tag</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;p&gt;</span>
+                                </td>
+                                <td><span class="tag-name">paragraph element</span></td>
+                                <td>Contains and displays a block of text that defines a paragraph</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;select&gt;</span>
+                                </td>
+                                <td><span class="tag-name">select element</span></td>
+                                <td>Creates a drop-down list for the user to select from a number of option elements</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;source&gt;</span>
+                                </td>
+                                <td><span class="tag-name">media or image source element</span></td>
+                                <td>Represents an interface for adding source content to the page</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;span&gt;</span>
+                                </td>
+                                <td><span class="tag-name">content span element</span></td>
+                                <td>Used for grouping related text or elements for styling and scripting</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;strong&gt;</span>
+                                </td>
+                                <td><span class="tag-name">strong importance element</span></td>
+                                <td>Used to identify text that is very important, or urgent</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;style&gt;</span>
+                                </td>
+                                <td><span class="tag-name">style information element</span></td>
+                                <td>Applies CSS styles to an HTML document</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;ul&gt;</span>
+                                </td>
+                                <td><span class="tag-name">unordered list element</span></td>
+                                <td>Represents an unordered list of items</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="code">&lt;video&gt;</span>
+                                </td>
+                                <td><span class="tag-name">video embed element</span></td>
+                                <td>Represents an interface for adding video content to the page</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- scroll to top button -->
+                <a href="#" class="top">Back to Top &#8593;</a>    
+            </main>
+            
+            <footer>&#169 2024  Elisabeth Turci <br>
+                (GitHub @Elibeth13) </footer>
+
+        </body>
+    </html>
